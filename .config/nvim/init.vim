@@ -11,6 +11,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+Plug 'tpope/vim-fugitive'
 Plug 'neomake/neomake'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
