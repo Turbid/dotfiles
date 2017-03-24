@@ -33,7 +33,7 @@ let g:tmuxline_powerline_separators=0
 let g:deoplete#enable_at_startup=1
 let g:neomake_python_enabled_makers=['flake8', 'pep8']
 let deoplete#sources#jedi#show_docstring=1
-let g:molokai_original = 1
+let g:molokai_original = 0
 
 set rnu
 set cursorline
@@ -51,7 +51,9 @@ colorscheme molokai
 set splitbelow
 set splitright
 
+set mouse=a
 set noerrorbells
+set noshowmode
 "set hidden
 
 set ignorecase
