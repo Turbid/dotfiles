@@ -19,7 +19,9 @@ Plug 'zchee/deoplete-jedi', { 'for': 'python' }
 Plug 'Vimjas/vim-python-pep8-indent', { 'for': 'python' }
 Plug 'hdima/python-syntax', { 'for': 'python' }
 Plug 'Glench/Vim-Jinja2-Syntax', { 'for': 'jinja' }
+
 Plug 'carlitux/deoplete-ternjs', { 'for': 'javascript' }
+Plug 'jelera/vim-javascript-syntax', { 'for': 'javascript' }
 
 Plug 'tomasr/molokai'
 "Plug 'edkolev/tmuxline.vim'
