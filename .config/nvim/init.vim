@@ -45,11 +45,11 @@ set colorcolumn=80
 set bg=dark
 colorscheme molokai
 
-"set tabstop=4
-"set shiftwidth=4
-"set softtabstop=4
-"set autoindent
-"set smartindent
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set autoindent
+set smartindent
 
 set splitbelow
 set splitright
