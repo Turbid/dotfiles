@@ -38,7 +38,7 @@ let g:neomake_python_enabled_makers=['flake8', 'pep8']
 let deoplete#sources#jedi#show_docstring=1
 let g:molokai_original = 0
 
-set rnu
+set nu
 set cursorline
 set colorcolumn=80
 
