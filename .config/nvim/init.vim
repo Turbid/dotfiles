@@ -37,7 +37,11 @@ if has('win32') || has('win64')
 endif
 
 set background=dark
-colorscheme molokai
+
+try
+    colorscheme molokai
+catch E185
+endtry
 
 set number
 set cursorline
