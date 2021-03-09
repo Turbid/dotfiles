@@ -41,6 +41,7 @@ set background=dark
 try
     colorscheme molokai
 catch E185
+    colorscheme desert
 endtry
 
 set number
