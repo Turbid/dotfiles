@@ -6,7 +6,7 @@ opt.number = true
 
 opt.title = true
 opt.laststatus = 3
---opt.showmode = false
+opt.showmode = false
 
 opt.clipboard = 'unnamedplus'
 
