@@ -1,5 +1,6 @@
 --local cmd = vim.cmd
 local opt = vim.opt
+local api = vim.api
 
 opt.number = true
 --opt.cursorline = true
@@ -23,6 +24,14 @@ opt.expandtab = true
 opt.tabstop = 4
 opt.shiftwidth = 4
 opt.smartindent = true
+
+api.nvim_create_autocmd("FileType", {
+  pattern = "lua",
+  callback = function()
+    vim.opt_local.tabstop = 2
+    vim.opt_local.shiftwidth = 2
+  end
+})
 
 require'nvim-treesitter.configs'.setup{
   ensure_installed={"lua", "python"},
