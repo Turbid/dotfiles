@@ -33,6 +33,8 @@ return require('packer').startup(function(use)
       ts_update()
     end, }
 
+  use 'neovim/nvim-lspconfig'
+
   if packer_bootstrap then
     require('packer').sync()
   end
