@@ -14,18 +14,24 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
-  use ({
+  use {
     'EdenEast/nightfox.nvim',
     config = function()
         vim.cmd('colorscheme nordfox')
-    end
-  })
+    end, }
 
   use { 'nvim-lualine/lualine.nvim',
       --requires = {'kyazdani42/nvim-web-devicons', opt = true},
       config = function()
         require('lualine').setup()
       end, }
+
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function()
+      local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+      ts_update()
+    end, }
 
   if packer_bootstrap then
     require('packer').sync()

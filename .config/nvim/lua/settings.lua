@@ -1,4 +1,4 @@
-local cmd = vim.cmd
+--local cmd = vim.cmd
 local opt = vim.opt
 
 opt.number = true
@@ -23,3 +23,11 @@ opt.expandtab = true
 opt.tabstop = 4
 opt.shiftwidth = 4
 opt.smartindent = true
+
+require'nvim-treesitter.configs'.setup{
+  ensure_installed={"lua", "python"},
+  auto_install=true,
+  highlight={
+    enable=true,
+  },
+}
