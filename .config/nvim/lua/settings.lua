@@ -33,6 +33,15 @@ api.nvim_create_autocmd("FileType", {
   end
 })
 
+require('lualine').setup{
+  options = {
+    icons_enabled = true,
+    theme = 'nord',
+  }
+}
+
+require('lualine').get_config()
+
 require'nvim-treesitter.configs'.setup{
   ensure_installed={"lua", "python"},
   auto_install=true,
@@ -42,6 +51,11 @@ require'nvim-treesitter.configs'.setup{
 }
 
 require'lspconfig'.pyright.setup{}
+
+require'py_lsp'.setup {
+  -- This is optional, but allows to create virtual envs from nvim
+  --host_python = "/path/to/python/bin"
+}
 
 local cmp = require'cmp'
 

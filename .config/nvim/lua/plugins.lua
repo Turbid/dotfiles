@@ -22,9 +22,7 @@ return require('packer').startup(function(use)
 
   use { 'nvim-lualine/lualine.nvim',
       --requires = {'kyazdani42/nvim-web-devicons', opt = true},
-      config = function()
-        require('lualine').setup()
-      end, }
+  }
 
   use {
     'nvim-treesitter/nvim-treesitter',
@@ -33,8 +31,15 @@ return require('packer').startup(function(use)
       ts_update()
     end, }
 
-  use 'neovim/nvim-lspconfig'
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.0',
+  -- or                            , branch = '0.1.x',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
 
+  use 'neovim/nvim-lspconfig'
+  use 'HallerPatrick/py_lsp.nvim'
+  
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
