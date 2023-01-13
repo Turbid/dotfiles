@@ -2,6 +2,8 @@
 local opt = vim.opt
 local api = vim.api
 
+opt.swapfile = false
+
 opt.number = true
 --opt.cursorline = true
 
