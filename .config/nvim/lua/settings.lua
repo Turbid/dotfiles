@@ -59,6 +59,8 @@ require'py_lsp'.setup {
   host_python = "/usr/bin/env python3"
 }
 
+require('xkbswitch').setup()
+
 local cmp = require'cmp'
 
 cmp.setup ({
