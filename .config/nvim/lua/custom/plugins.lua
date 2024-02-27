@@ -1,7 +1,6 @@
 -- local overrides = require("custom.configs.overrides")
 
 local plugins = {
-  
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
@@ -46,6 +45,13 @@ local plugins = {
     end,
   },
 
+  {
+    "ivanesmantovich/xkbswitch.nvim",
+    lazy = false,
+    config = function()
+      require("xkbswitch").setup()
+    end,
+  },
 }
 
 return plugins
