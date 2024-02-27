@@ -12,6 +12,13 @@ M.general = {
       end,
       "Toggle theme",
     },
+    ["<leader>gg"] = {
+      function()
+        local term = require("nvterm.terminal").new("float")
+        vim.api.nvim_chan_send(term.job_id, "lazygit\n")
+      end,
+      "open Lazygit",
+    },
   },
 }
 
