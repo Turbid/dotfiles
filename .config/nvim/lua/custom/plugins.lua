@@ -52,6 +52,17 @@ local plugins = {
       require("xkbswitch").setup()
     end,
   },
+
+  {
+    "kdheepak/lazygit.nvim",
+    cmd = {
+      "LazyGit",
+      "LazyGitConfig",
+      "LazyGitCurrentFile",
+      "LazyGitFilter",
+      "LazyGitFilterCurrentFile",
+    },
+  },
 }
 
 return plugins
